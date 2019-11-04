@@ -38,11 +38,11 @@ public class BaseTest {
 
     @Before
     public void runBeforeMethod() throws NoSuchMethodException {
-
+    	System.out.println("______________");
         log.info("runBeforeMethod called before method {}.{}", this.getClass().getName(), name.getMethodName());
         try {
             Method testMethod = this.getClass().getMethod(name.getMethodName());
-
+            	
             //If the tests are run on staging, then only run those tests which have
             //@RunONStaging Annotation. All others tests should be ignored.
             if (suiteData.getEnvironment().equals("stg")) {
