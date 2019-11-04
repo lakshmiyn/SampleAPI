@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "items": {
+    "type": "object",
+    "required":["id","peopleSoftId","orgName"],
+    "properties": {
+
+      "id": {
+        "type": ["string","null"]
+      },
+
+      "peopleSoftId": {
+        "type": ["string","null"]
+      },
+
+      "salesForceCustId": {
+        "type": ["string","null"]
+      },
+
+      "orgName": {
+        "type": ["string","null"]
+      },
+
+      "domain": {
+        "type": ["string","null"]
+      },
+
+      "orgType": {
+        "type": "string"
+      },
+
+      "contractValueUSD": {
+        "type": ["number","null"]
+      },
+
+      "props":{
+      "type": ["object","null","string"]
+    },
+
+    "contactInfo":{
+    "type": ["object","null","string"]
+  },
+
+  "supportInfo": {
+    "type":["object","null","string"]
+  },
+
+  "compliance": {
+    "type": ["object","null","string"]
+  },
+
+  "updatedAt": {
+    "type": ["string","null"]
+  },
+
+  "deletedAt": {
+    "type": ["string","null"]
+  }
+}
+}
+}
+
+
+

@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id","lpId", "lpSetId", "oldLpSetId", "kitId", "contract", "contractLine",
+    "peopleSoftProdId", "orderNumber", "collectionId", "seats", "lineStartDate", "lineEndDate",
+    "licenseExpDate", "peopleSoftOrgId", "salesForceCustId", "customerName",  "orgId",
+      "contractValueUSD", "contractValue", "props", "updatedAt", "deletedAt" ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "lpId": {
+        "type": "string"
+      },
+      "lpSetId": {
+        "type": "string"
+      },
+      "oldLpSetId": {
+        "type": ["string", "null"]
+      },
+      "kitId": {
+        "type": "string"
+      },
+      "contract": {
+        "type": "string"
+      },
+      "contractLine": {
+        "type": "integer"
+      },
+      "peopleSoftProdId": {
+        "type": "string"
+      },
+      "orderNumber": {
+        "type": "integer"
+      },
+      "collectionId": {
+        "type": "string"
+      },
+      "seats": {
+        "type": "integer"
+      },
+      "lineStartDate": {
+        "type": "string"
+      },
+      "lineEndDate": {
+        "type": "string"
+      },
+      "licenseExpDate": {
+        "type": "string"
+      },
+      "peopleSoftOrgId": {
+        "type": ["string", "null"]
+      },
+      "salesForceCustId": {
+        "type": ["string", "null"]
+      },
+      "customerName": {
+        "type": ["string", "null"]
+      },
+      "orgId": {
+        "type": "string"
+      },
+      "contractValueUSD": {
+        "type": "number"
+      },
+      "contractValue": {
+        "type": "number"
+      },
+      "props": {
+        "type": ["object", "null", "string"]
+      },
+      "updatedAt": {
+        "type": "string"
+      },
+      "deletedAt": {
+        "type": ["string", "null"]
+      }
+
+    }
+  }
+}

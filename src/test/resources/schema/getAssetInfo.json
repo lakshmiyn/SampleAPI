@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "channelUuid": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "assets": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "assetType": {
+              "type": "string"
+            },
+            "assetUuid": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
